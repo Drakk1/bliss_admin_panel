@@ -3,15 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Янв 08 2013 г., 22:55
+-- Время создания: Янв 23 2013 г., 04:58
 -- Версия сервера: 5.5.27
 -- Версия PHP: 5.4.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
---
--- База данных: `dayz_longhost`
---
 --
 -- Структура таблицы `adm_admins`
 --
@@ -33,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `adm_admins` (
 --
 
 INSERT INTO `adm_admins` (`id`, `login`, `password`, `guid`, `lastlogin`, `permissions`) VALUES
-(1, 'superadmin', 'e10adc3949ba59abbe56e057f20f883e', '', '2012-12-24 02:48:56', 'control,admins,chat,entities,map,');
+(1, 'superadmin', 'e10adc3949ba59abbe56e057f20f883e', '', '2012-12-24 00:48:56', 'control,admins,chat,entities,map,');
 
 -- --------------------------------------------------------
 
@@ -494,7 +491,7 @@ INSERT INTO `adm_objects` (`id`, `class_name`, `name`, `type`, `subtype`, `trans
 (413, '10x_303', 's10x_303', 'item', 'heavyammo', 0, 0, 0, 0, 1, 'heavyammo', 0, 1),
 (414, '15Rnd_9x19_M9', 's15Rnd_9x19_M9', 'item', 'smallammo', 0, 0, 0, 0, 1, 'smallammo', 0, 1),
 (415, '15Rnd_9x19_M9SD', 's15Rnd_9x19_M9SD', 'item', 'smallammo', 0, 0, 0, 0, 1, 'smallammo', 0, 1),
-(416, '15Rnd_W1866_Pellet', 's15Rnd_W1866_Pellet', 'item', 'heavyammo', 0, 0, 0, 0, 1, 'heavyammo', 0, 0),
+(416, '15Rnd_W1866_Pellet', 's15Rnd_W1866_Pellet', 'item', 'heavyammo', 0, 0, 0, 0, 1, 'heavyammo', 0, 1),
 (417, '15Rnd_W1866_Slug', 's15Rnd_W1866_Slug', 'item', 'heavyammo', 0, 0, 0, 0, 1, 'heavyammo', 0, 1),
 (418, '17Rnd_9x19_glock17', 's17Rnd_9x19_glock17', 'item', 'smallammo', 0, 0, 0, 0, 1, 'smallammo', 0, 1),
 (419, '1Rnd_HE_M203', 's1Rnd_HE_M203', 'item', 'smallammo', 0, 0, 0, 0, 1, 'smallammo', 0, 1),
@@ -551,7 +548,7 @@ INSERT INTO `adm_objects` (`id`, `class_name`, `name`, `type`, `subtype`, `trans
 (470, 'BoltSteel', 'sBoltSteel', 'item', 'heavyammo', 0, 0, 0, 0, 1, 'heavyammo', 0, 1),
 (471, 'Colt1911', 'sColt1911', 'item', 'pistol', 0, 0, 0, 0, 5, 'pistol', 0, 1),
 (472, 'Crossbow', 'sCrossbow', 'item', 'rifle', 0, 0, 0, 0, 10, 'rifle', 0, 1),
-(473, 'crowbar_swing', 'scrowbar_swing', 'item', 'none', 0, 0, 0, 0, 1, 'none', 0, 0),
+(473, 'crowbar_swing', 'scrowbar_swing', 'item', 'none', 0, 0, 0, 0, 1, 'none', 0, 1),
 (474, 'CZ_VestPouch_EP1', 'sCZ_VestPouch_EP1', 'item', 'backpack', 0, 0, 0, 0, 1, 'backpack', 0, 1),
 (475, 'DMR', 'sDMR', 'item', 'rifle', 0, 0, 0, 0, 10, 'rifle', 0, 1),
 (476, 'DZ_ALICE_Pack_EP1', 'sDZ_ALICE_Pack_EP1', 'item', 'backpack', 4, 20, 0, 0, 1, 'backpack', 0, 1),
@@ -804,3 +801,5 @@ CREATE TABLE IF NOT EXISTS `adm_players_log` (
   `created_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
